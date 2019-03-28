@@ -12,9 +12,11 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
+  color: #8c2300;
 }
 
 code {
@@ -24,6 +26,8 @@ code {
 
 small {
   display: block;
+  font-weight: 700;
+  font-family: "Cinzel", serif;
 }
 
 #splash {
