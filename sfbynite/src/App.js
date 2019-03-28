@@ -1,48 +1,12 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import SiteNavigation from "./components/general/SiteNavigation.js";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-          <div className="container-fluid">
-            <div className="navbar-header">
-              <a className="navbar-brand" href="#">
-                Modern Nights
-              </a>
-            </div>
-            <ul className="nav navbar-nav  mr-auto mt-2 mt-lg-0">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Make A Character
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Policies
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Staff Training
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Help Files
-                </a>
-              </li>
-            </ul>
-            <ul className="nav navbar-right navbar-nav">
-              <li className="nav-item">
-                <button className="btn navbar-btn btn-light">Sign Up</button>
-              </li>
-              <li className="nav-item">
-                <span className="nav-link">Log In</span>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <SiteNavigation />
 
         <div className="container">
           <div id="splash">
