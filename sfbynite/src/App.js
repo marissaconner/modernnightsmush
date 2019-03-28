@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import SiteNavigation from "./components/general/SiteNavigation.js";
 
 class App extends Component {
@@ -8,13 +7,15 @@ class App extends Component {
       <div className="App">
         <SiteNavigation />
 
-        <div className="container">
-          <div id="splash">
+        <div id="splash">
+          <div className="container">
             <div className="row">
-              <h1>
-                Modern Nights
-                <small>A Vampire: The Masquerade Role Playing Game</small>
-              </h1>
+              <div className="col-md-12">
+                <h1>
+                  <span className="display large">Modern Nights</span>
+                  <small>A Vampire: The Masquerade Role Playing Game</small>
+                </h1>
+              </div>
             </div>
 
             <div className="row">

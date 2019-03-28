@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 
 const SiteNavigation = () => (
-  <Navbar bg="light" expand="lg">
+  <Navbar variant="dark" expand="lg">
     <div className="container">
       <Navbar.Brand href="#home">Modern Nights</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

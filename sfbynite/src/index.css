@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   padding: 0;
@@ -6,30 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background: grey;
 }
 
-* {
-  font-family: "Raleway", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Cinzel Decorative", serif;
-  color: #8c2300;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-small {
-  display: block;
-  font-weight: 700;
-  font-family: "Cinzel", serif;
-}
-
-#splash {
-  padding: 2em 0 2em 0;
+#root,
+.App {
+  height: 100%;
 }
