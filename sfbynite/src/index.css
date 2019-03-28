@@ -8,7 +8,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+small {
+  display: block;
+}
+
+#splash {
+  padding: 2em 0 2em 0;
 }
