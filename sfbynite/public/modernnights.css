@@ -1,0 +1,135 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  color: #8c2300;
+  font-weight: 700 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+small {
+  display: block;
+  font-weight: 700;
+  font-family: "Cinzel", serif;
+}
+
+.display,
+.navbar-brand {
+  font-family: "Cinzel Decorative";
+  font-weight: 700;
+}
+.display.large {
+  font-size: 2.75em;
+}
+#splash {
+  padding: 4em 0 4em 0;
+  background-image: url("./img/san_francisco_lights.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f3f9fa;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 3px #232323;
+  height: 100%;
+}
+#splash a {
+  color: #f3f9fa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#splash h1,
+#splash h2,
+#splash small {
+  color: #f3f9fa;
+}
+
+#splash {
+  min-height: 100%;
+}
+
+#splash .row {
+  padding: 0.66em 0 0.66em 0;
+}
+
+.navbar {
+  background-color: black;
+  letter-spacing: 1px;
+}
+.navbar-dark .navbar-brand {
+  color: #f3f9ff;
+}
+.nav-link {
+  color: #f3f9ff !important;
+}
+.nav-link:hover,
+a:hover,
+#splash a:hover {
+  color: #bf3000 !important;
+}
+
+.btn {
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.btn-toolbar .btn {
+  margin: 0 0.25em 0 0.25em;
+}
+.btn-toolbar .btn:first-of-type {
+  margin-left: 0;
+}
+
+.btn-primary {
+  background-color: #a62a00;
+  border-color: #a62a00;
+}
+.btn-primary:hover {
+  background-color: #bf3000;
+  border-color: #bf3000;
+}
+
+.requests h1,
+.requests h2,
+.requests h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.request-originator {
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+}
+.request-readerlist {
+  font-size: 0.85rem;
+  color: #563e36;
+}
+.request-body {
+  border: 1px solid #f1ebe9;
+  padding: 1em;
+}
+
+.request-originator + .dropdown {
+  margin: 0 1em 0 1em;
+  display: inline-block;
+}
+
+.request-comment {
+  border-top: 1px solid #f1ebe9;
+  padding: 1em 0 1em 0;
+}
+.request-comment .request-commenter {
+  font-weight: 700;
+}
+
+.request-comment .comment-date {
+  float: right;
+  color: #563e36;
+}
