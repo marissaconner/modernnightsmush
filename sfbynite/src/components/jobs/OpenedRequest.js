@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   ButtonToolbar,
   Button,
@@ -6,6 +6,7 @@ import {
   ButtonGroup,
   Form
 } from "react-bootstrap";
+import RequestComment from "./RequestComment.js";
 
 const OpenedRequest = () => (
   <div className="requests">
@@ -35,38 +36,16 @@ const OpenedRequest = () => (
       <div className="request-body">
         <p>Hello, blah blah blah, this is the body of my initial +request.</p>
 
-        <div className="request-comment">
-          <p>
-            <span class="request-commenter">Timmy</span>
-            <span class="comment-date">March 23</span>
-          </p>
-
-          <p>Yeah, this is my reply, it is so totally rad yo.</p>
-        </div>
-
-        <div className="request-comment">
-          <p>
-            <span class="request-commenter">Timmy</span>
-            <span class="comment-date">March 23</span>
-          </p>
-
-          <p>Yeah, this is my reply, it is so totally rad yo.</p>
-        </div>
-
-        <div className="request-comment">
-          <p>
-            <span class="request-commenter">Timmy</span>
-            <span class="comment-date">March 23</span>
-          </p>
-
-          <p>Yeah, this is my reply, it is so totally rad yo.</p>
-        </div>
-        <span data-toggle="collapse" href="#reply">
-          Reply
-        </span>
-
+        <RequestComment
+          commentName="Timmy"
+          commentContents="This is my comment."
+          commentDate="March 23"
+        />
         <Form>
           <ButtonToolbar>
+            <Button data-toggle="collapse" href="#reply">
+              Reply
+            </Button>
             <Button>Share</Button>
             <Button>Assign</Button>
           </ButtonToolbar>
