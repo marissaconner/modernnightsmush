@@ -78,6 +78,8 @@ a:hover,
 .btn {
   border-radius: 8px;
   letter-spacing: 1px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .btn-toolbar .btn {
@@ -87,6 +89,10 @@ a:hover,
 .btn-primary {
   background-color: #a62a00;
   border-color: #a62a00;
+}
+
+.btn-default {
+  border: 2px solid #a62a00;
 }
 .btn-primary:hover {
   background-color: #bf3000;
