@@ -7,6 +7,7 @@ import {
   Form
 } from "react-bootstrap";
 import RequestComment from "./RequestComment.js";
+import StaffAssignButton from "./StaffAssignButton.js";
 
 const OpenedRequest = () => (
   <div className="request">
@@ -14,9 +15,9 @@ const OpenedRequest = () => (
       <span>back</span>
       <h2>Request Title</h2>
       <p>
-        <span class="request-originator">Player Name</span>
-        <Dropdown>
-          <Dropdown.Toggle size="sm">Player's Jobs</Dropdown.Toggle>
+        <span className="request-originator">From: </span>
+        <Dropdown className="narrow-inline-dropdown">
+          <Dropdown.Toggle size="sm">Player Name</Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item href="#">Another Request Title</Dropdown.Item>
             <Dropdown.Item href="#">Yet More Request Titles</Dropdown.Item>
@@ -24,7 +25,11 @@ const OpenedRequest = () => (
         </Dropdown>
       </p>
 
-      <p class="request-readerlist">To: Jimbo, Timmy, and Garth</p>
+      <p class="request-readerlist">
+        <strong>To:</strong> Jimbo, Timmy, and Garth,{" "}
+        <strong>Assigned To:</strong>{" "}
+        <StaffAssignButton isstaff="1" staffer="Skynet" />
+      </p>
     </div>
     <div className="request-body">
       <p>Hello, blah blah blah, this is the body of my initial +request.</p>
@@ -36,11 +41,7 @@ const OpenedRequest = () => (
       />
 
       <Form>
-        <ButtonToolbar>
-          <Button>Share</Button>
-
-          <Button>Assign</Button>
-        </ButtonToolbar>
+        <Button>Share</Button>
 
         {/*  Using react-bootstrap here because I will want animations/transitions and so on so I will need to inevitably convert it. */}
         <Form.Group controlId="share-with">
@@ -65,9 +66,18 @@ const OpenedRequest = () => (
             <span class="caret" />
           </button>
           <div class="dropdown-menu">
-            <span class="dropdown-item">Send & Approve</span>
-            <span class="dropdown-item">Send & Close</span>
-            <span class="dropdown-item">Send & Deny</span>
+            <a href="#" class="dropdown-item">
+              Send
+            </a>
+            <a href="#" class="dropdown-item">
+              Send & Approve
+            </a>
+            <a href="#" class="dropdown-item">
+              Send & Close
+            </a>
+            <a href="#" class="dropdown-item">
+              Send & Deny
+            </a>
           </div>
         </div>
       </Form>

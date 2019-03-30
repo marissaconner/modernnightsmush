@@ -113,8 +113,7 @@ a:hover,
   padding: 1em;
 }
 
-.request-originator + .dropdown {
-  margin: 0 1em 0 1em;
+.narrow-inline-dropdown {
   display: inline-block;
 }
 
