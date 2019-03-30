@@ -7,11 +7,6 @@ class App extends Component {
     return (
       <div className="App">
         <SiteNavigation />
-
-        <div className="container">
-          <OpenedRequest />
-        </div>
-
         <div id="splash">
           <div className="container">
             <div className="row">
