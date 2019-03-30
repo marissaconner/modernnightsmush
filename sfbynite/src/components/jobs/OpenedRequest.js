@@ -38,19 +38,36 @@ const OpenedRequest = () => (
       <Form>
         <ButtonToolbar>
           <Button>Share</Button>
+
           <Button>Assign</Button>
         </ButtonToolbar>
 
-        <div id="reply">
-          <Form.Control as="textarea" rows="3" />
-          <div id="job-reply-toolbar">
-            <Form.Control as="select">
-              <option>Comment</option>
-              <option>Approve</option>
-              <option>Close</option>
-              <option>Deny</option>
-            </Form.Control>
-            <Button>Send</Button>
+        {/*  Using react-bootstrap here because I will want animations/transitions and so on so I will need to inevitably convert it. */}
+        <Form.Group controlId="share-with">
+          <Form.Label>Share With:</Form.Label>
+          <Form.Control type="text" />
+        </Form.Group>
+
+        <div className="form-group">
+          <label for="reply">Reply</label>
+          <textarea name="reply" className="form-control" id="reply" />
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">
+            Send
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+          >
+            <span class="caret" />
+          </button>
+          <div class="dropdown-menu">
+            <span class="dropdown-item">Send & Approve</span>
+            <span class="dropdown-item">Send & Close</span>
+            <span class="dropdown-item">Send & Deny</span>
           </div>
         </div>
       </Form>
