@@ -37,18 +37,11 @@ const OpenedRequest = () => (
 
       <Form>
         <ButtonToolbar>
-          <Button data-toggle="collapse" href="#reply">
-            Reply
-          </Button>
           <Button>Share</Button>
           <Button>Assign</Button>
         </ButtonToolbar>
 
-        <div id="reply" class="collapse">
-          <Form.Label>Comments</Form.Label>
-          <span data-toggle="collapse" href="#reply" class="close">
-            &times;
-          </span>
+        <div id="reply">
           <Form.Control as="textarea" rows="3" />
           <div id="job-reply-toolbar">
             <Form.Control as="select">
